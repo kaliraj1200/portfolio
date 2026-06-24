@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaliraj C | Portfolio</title>
+    <meta name="description" content="Portfolio of Kaliraj C, an aspiring Full Stack Web Developer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Devicon for tech stack logos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Phosphor Icons for modern minimalist icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script>
+        // Set default theme to Dark now
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">Kaliraj C</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="ph ph-sun"></i> <!-- Sun is default as Dark mode is default -->
+                </button>
+                <div class="mobile-menu-btn">
+                    <i class="ph ph-list"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section visible">
+            <div class="hero-content">
+                <h2 class="greeting">Hi, I am</h2>
+                <h1 class="name">Kaliraj C</h1>
+                <h3 class="role">Aspiring <span class="gradient-text">Full Stack Web Developer</span></h3>
+                <p class="objective">
+                    To establish a career as an Executive in a dynamic and progressive organization where my skills can contribute to the company's goals and achievements while aiding my own personal and professional growth.
+                </p>
+                <div class="contact-info">
+                    <div class="btn-group" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="mailto:c.kaliraj2005@gmail.com" class="contact-btn"><i class="ph ph-envelope-simple"></i> Email Me</a>
+                        <a href="kaliraj.pdf" download="kaliraj.pdf" class="contact-btn outline-btn"><i class="ph ph-download-simple"></i> Resume</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/kaliraj-c130bb628a" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="devicon-linkedin-plain colored"></i></a>
+                        <a href="https://github.com/Kaliraj4125" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="devicon-github-original"></i></a>
+                        <a href="tel:7418953920" title="7418953920" style="color: #10b981;"><i class="ph-fill ph-phone-call"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Orbiting Tech Stack Icons -->
+                <i class="devicon-html5-plain colored orbit-icon icon-1"></i>
+                <i class="devicon-css3-plain colored orbit-icon icon-2"></i>
+                <i class="devicon-javascript-plain colored orbit-icon icon-3"></i>
+                <i class="devicon-java-plain colored orbit-icon icon-4"></i>
+                <i class="devicon-mysql-plain colored orbit-icon icon-5"></i>
+
+                <div class="image-wrapper">
+                    <img src="profile_avatar.png" alt="Kaliraj C">
+                    <!-- Fresher Animated Badge -->
+                    <div class="fresher-badge">
+                        <i class="ph-fill ph-rocket-launch"></i> Fresher
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Educational <span class="gradient-text">Journey</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card slide-up-anim-target">
+                        <span class="date">2025 - 2027</span>
+                        <h3>Master Of Computer Application</h3>
+                        <h4>Karpagam Academy of Higher Education, Coimbatore</h4>
+                        <p class="cgpa">CGPA: 7.68</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card slide-up-anim-target">
+                        <span class="date">2022 - 2025</span>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <h4>Sri Kaliswari College, Sivakasi</h4>
+                        <p class="cgpa">CGPA: 7.21</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card slide-up-anim-target">
+                        <span class="date">2021 - 2022</span>
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <h4>T.N.P.M.M. N Hr. Sec. School, Thalavaipuram</h4>
+                        <p class="cgpa">Percentage: 46.5%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card slide-up-anim-target">
+                        <span class="date">2019 - 2020</span>
+                        <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                        <h4>Nadar Hr. Sec. School, Rajapalayam</h4>
+                        <p class="cgpa">Percentage: 50%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Experience & <span class="gradient-text">Projects</span></h2>
+            
+            <h3 class="subsection-title"><i class="ph ph-briefcase"></i> Internship</h3>
+            <div class="experience-card glass-card slide-up-anim-target" style="margin-bottom: 3rem;">
+                <div class="exp-header">
+                    <h3>Web Development Intern</h3>
+                    <span class="date">April, 2025</span>
+                </div>
+                <h4 class="company">GK Creations</h4>
+                <p>Managed server configurations and website deployments to ensure high uptime and security. Assisted in troubleshooting technical hosting issues and optimizing server performance for client websites.</p>
+            </div>
+
+            <h3 class="subsection-title"><i class="ph ph-code"></i> Key Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card glass-card slide-up-anim-target">
+                    <div class="project-date">March, 2026</div>
+                    <h3>Assessment Tool System</h3>
+                    <div class="tech-stack">
+                        <span><i class="devicon-nextjs-plain"></i> Next.js</span>
+                        <span><i class="devicon-nodejs-plain colored"></i> JSON Server</span>
+                        <span><i class="ph ph-plugs"></i> API</span>
+                    </div>
+                    <p>Developed a responsive assessment platform featuring real-time testing, performance tracking, and seamless API integration to simulate a full-stack environment, with a strong focus on user experience and mobile responsiveness.</p>
+                </div>
+
+                <div class="project-card glass-card slide-up-anim-target">
+                    <div class="project-date">May, 2025</div>
+                    <h3>E-Commerce Website - Crackers Shop</h3>
+                    <div class="tech-stack">
+                        <span><i class="ph ph-shopping-cart"></i> E-commerce</span>
+                        <span><i class="ph ph-credit-card"></i> Payment</span>
+                        <span><i class="ph ph-shield-check"></i> Security</span>
+                    </div>
+                    <p>Built a secure e-commerce platform to digitize an offline retailer, integrating a robust payment gateway with real-time verification, fraud detection, and automated refunds for seamless transactions.</p>
+                </div>
+
+                <div class="project-card glass-card slide-up-anim-target">
+                    <div class="project-date">May, 2025</div>
+                    <h3>Cracker Shop Billing Software</h3>
+                    <div class="tech-stack">
+                        <span><i class="devicon-java-plain colored"></i> Java</span>
+                        <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span><i class="ph ph-package"></i> Inventory</span>
+                    </div>
+                    <p>Developed a billing and inventory management system for cracker shops using Java and MySQL. Implemented invoice generation, stock tracking, sales reporting, and customer management features to improve operational efficiency and billing accuracy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category glass-card slide-up-anim-target">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span><i class="devicon-nextjs-plain"></i> Next.js</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card slide-up-anim-target">
+                    <h3>Backend & Database</h3>
+                    <div class="skill-tags">
+                        <span><i class="devicon-nodejs-plain colored"></i> JSON Server</span>
+                        <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span><i class="devicon-php-plain colored"></i> PHP</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card slide-up-anim-target">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span><i class="devicon-java-plain colored"></i> Java</span>
+                        <span><i class="devicon-c-plain colored"></i> C</span>
+                        <span><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span><i class="ph ph-brackets-curly"></i> OOP</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card slide-up-anim-target">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                        <span><i class="devicon-git-plain colored"></i> Git</span>
+                        <span><i class="devicon-github-original"></i> GitHub</span>
+                        <span><i class="devicon-vercel-original"></i> Vercel</span>
+                        <span><i class="ph ph-file-xls"></i> MS Excel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2-col" style="margin-top: 3rem;">
+                <div class="glass-card slide-up-anim-target">
+                    <h3><i class="ph ph-certificate"></i> Certifications</h3>
+                    <ul class="list-items">
+                        <li>C / C++ & Java Certification - CSC Computer Education, Sivakasi</li>
+                        <li>MongoDB Certification</li>
+                        <li>ICT Learnathon</li>
+                    </ul>
+                </div>
+                <div class="glass-card slide-up-anim-target">
+                    <h3><i class="ph ph-star"></i> Soft Skills & Interests</h3>
+                    <div class="skill-tags" style="margin-top: 1rem;">
+                        <span>Adaptability</span>
+                        <span>Creative thinking</span>
+                        <span>Full Stack Web Development</span>
+                        <span>Web Application Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Kaliraj C. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/kaliraj-c130bb628a" target="_blank"><i class="devicon-linkedin-plain colored"></i></a>
+                <a href="https://github.com/Kaliraj4125" target="_blank"><i class="devicon-github-original"></i></a>
+                <a href="mailto:c.kaliraj2005@gmail.com" style="color: var(--accent-1);"><i class="ph-fill ph-envelope-simple"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
